@@ -1,7 +1,6 @@
 
 
-const { Agent } = require("http")
-const conn = require("../dbconn/dbconn")
+const conn = require("../conn/dbconn")
 const crypto=require('crypto')
 const bcrypt=require('bcrypt')
 

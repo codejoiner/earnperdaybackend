@@ -3,7 +3,6 @@ const dotenv =require('dotenv')
 
 dotenv.config()
 const fs=require('fs')
-const { error } = require('console')
 
 const conn=mysql.createPool({
    host:process.env.DB_HOST,

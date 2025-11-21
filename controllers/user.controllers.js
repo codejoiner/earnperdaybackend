@@ -1,5 +1,5 @@
 
-const conn=require('../dbconn/dbconn')
+const conn=require('../conn/dbconn')
 const bcrypt=require('bcrypt')
 const jwt=require('jsonwebtoken')
 require('dotenv').config()
