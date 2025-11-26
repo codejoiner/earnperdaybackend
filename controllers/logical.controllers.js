@@ -94,7 +94,7 @@ const Deposits= async(req,res)=>{
       const today=new Date().toISOString().slice(0,10)
      
        const {amount,agent}=req.body;
-       const deposed_amount=parseInt(amount)
+       const deposed_amount=parseFloat(amount)
        const active_userid=req.session.Current_userId
         if(!active_userid){
       return res.status(401).json({message:"session expire login again"})
